@@ -1,7 +1,7 @@
 /*
  * TransportCapacitySort
  * Bonial International GmbH
- * written by Jan Max Tiedemann
+ * written by Jan Max Tiedemann @ 2017
  *
  * This file is subject to the terms and conditions defined in
  * file 'LICENSE.txt', which is part of this source code package.
@@ -38,8 +38,8 @@ function onlyUnique(value, index, self) {
     return self.indexOf(value) === index;
 }
 
-if (process.argv.length > 2 || process.argv.length == 1) {
-  console.console.log("Usage: " + process.argv[0] + " <file spath>"});
+if (process.argv.length > 3 || process.argv.length == 2) {
+  console.log("Usage: node index.js <file spath>");
   return;
 }
 
