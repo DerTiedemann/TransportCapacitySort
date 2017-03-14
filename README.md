@@ -8,7 +8,8 @@ For this to run you will need:
 
 Just clone the repo and your done with init.
 ## Usage
-`node index.js <file path>`
+`node --expose-gc --max-old-space-size=2048 index.js <file path>`
+the `--expose-gc` flag lets the programm controll the garbage collector and `--max-old-space-size=2048` flag sets increases heap memory size to 2GB
 ## Credits
 Written by Jan Max Tiedemann
 ## License
