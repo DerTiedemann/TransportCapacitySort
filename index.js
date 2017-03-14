@@ -44,7 +44,7 @@ if (process.argv.length > 3 || process.argv.length == 2) {
 }
 
 // Path to input file
-var path = process.argv[1];
+var path = process.argv[2];
 
 // Init JSONStream (reads only the important parts (only the transports array) of the file)
 var json = JSONStream.parse('transports.*');
